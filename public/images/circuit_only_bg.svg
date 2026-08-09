@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="100%" height="100%">
+  <style>
+    .circuit-line { stroke: #171717; stroke-width: 1.2; fill: none; opacity: 0.38; }
+    .circuit-line-thin { stroke: #171717; stroke-width: 0.9; fill: none; stroke-dasharray: 4 4; opacity: 0.32; }
+    .circuit-node { fill: #171717; opacity: 0.45; }
+    .circuit-node-hollow { fill: #F7F7F4; stroke: #171717; stroke-width: 1.2; opacity: 0.45; }
+    .circuit-plus { stroke: #171717; stroke-width: 1.4; opacity: 0.45; }
+    .circuit-dot { fill: #171717; opacity: 0.3; }
+  </style>
+
+  <!-- TOP LEFT CIRCUIT ACCENTS -->
+  <g transform="translate(0, 0)">
+    <path class="circuit-line" d="M 0,220 A 220,220 0 0 1 220,0" />
+    <path class="circuit-line" d="M 0,180 A 180,180 0 0 1 180,0" />
+    <path class="circuit-line-thin" d="M 0,140 A 140,140 0 0 1 140,0" />
+    <circle class="circuit-node-hollow" cx="30" cy="177" r="4" />
+    
+    <!-- Top-left crosshair -->
+    <path class="circuit-plus" d="M 310,40 V 56 M 302,48 H 318" />
+  </g>
+
+  <!-- TOP RIGHT CIRCUIT ACCENTS -->
+  <g transform="translate(1400, 0) scale(-1, 1)">
+    <!-- Circuit Trace Lines -->
+    <path class="circuit-line" d="M 80,160 L 160,160 L 240,80 L 240,0" />
+    <path class="circuit-line" d="M 120,110 L 180,110 L 260,30 L 260,0" />
+    <circle class="circuit-node" cx="80" cy="160" r="3.5" />
+    <circle class="circuit-node" cx="120" cy="110" r="3.5" />
+
+    <!-- Top-right crosshair -->
+    <path class="circuit-plus" d="M 230,220 V 236 M 222,228 H 238" />
+
+    <!-- 5x5 Dot Matrix Array -->
+    <g transform="translate(40, 60)">
+      <circle class="circuit-dot" cx="0" cy="0" r="1.5" />
+      <circle class="circuit-dot" cx="12" cy="0" r="1.5" />
+      <circle class="circuit-dot" cx="24" cy="0" r="1.5" />
+      <circle class="circuit-dot" cx="36" cy="0" r="1.5" />
+      <circle class="circuit-dot" cx="48" cy="0" r="1.5" />
+
+      <circle class="circuit-dot" cx="0" cy="12" r="1.5" />
+      <circle class="circuit-dot" cx="12" cy="12" r="1.5" />
+      <circle class="circuit-dot" cx="24" cy="12" r="1.5" />
+      <circle class="circuit-dot" cx="36" cy="12" r="1.5" />
+      <circle class="circuit-dot" cx="48" cy="12" r="1.5" />
+
+      <circle class="circuit-dot" cx="0" cy="24" r="1.5" />
+      <circle class="circuit-dot" cx="12" cy="24" r="1.5" />
+      <circle class="circuit-dot" cx="24" cy="24" r="1.5" />
+      <circle class="circuit-dot" cx="36" cy="24" r="1.5" />
+      <circle class="circuit-dot" cx="48" cy="24" r="1.5" />
+
+      <circle class="circuit-dot" cx="0" cy="36" r="1.5" />
+      <circle class="circuit-dot" cx="12" cy="36" r="1.5" />
+      <circle class="circuit-dot" cx="24" cy="36" r="1.5" />
+      <circle class="circuit-dot" cx="36" cy="36" r="1.5" />
+      <circle class="circuit-dot" cx="48" cy="36" r="1.5" />
+
+      <circle class="circuit-dot" cx="0" cy="48" r="1.5" />
+      <circle class="circuit-dot" cx="12" cy="48" r="1.5" />
+      <circle class="circuit-dot" cx="24" cy="48" r="1.5" />
+      <circle class="circuit-dot" cx="36" cy="48" r="1.5" />
+      <circle class="circuit-dot" cx="48" cy="48" r="1.5" />
+    </g>
+  </g>
+
+  <!-- MID-RIGHT CROSSHAIR -->
+  <path class="circuit-plus" d="M 1320,460 V 476 M 1312,468 H 1328" />
+
+  <!-- BOTTOM LEFT CIRCUIT ACCENTS -->
+  <g transform="translate(0, 900) scale(1, -1)">
+    <path class="circuit-line" d="M 0,210 L 80,210 L 150,140 L 310,140" />
+    <path class="circuit-line" d="M 0,160 L 60,160 L 120,100 L 250,100" />
+    <path class="circuit-line" d="M 0,110 L 40,110 L 80,70 L 220,70" />
+    <circle class="circuit-node" cx="310" cy="140" r="3.5" />
+    <circle class="circuit-node" cx="250" cy="100" r="3.5" />
+    <circle class="circuit-node" cx="220" cy="70" r="3.5" />
+
+    <!-- Bottom-left crosshair -->
+    <path class="circuit-plus" d="M 40,40 V 56 M 32,48 H 48" />
+
+    <!-- Dot matrix -->
+    <g transform="translate(100, 20)">
+      <circle class="circuit-dot" cx="0" cy="0" r="1.5" />
+      <circle class="circuit-dot" cx="12" cy="0" r="1.5" />
+      <circle class="circuit-dot" cx="24" cy="0" r="1.5" />
+      <circle class="circuit-dot" cx="36" cy="0" r="1.5" />
+
+      <circle class="circuit-dot" cx="0" cy="12" r="1.5" />
+      <circle class="circuit-dot" cx="12" cy="12" r="1.5" />
+      <circle class="circuit-dot" cx="24" cy="12" r="1.5" />
+      <circle class="circuit-dot" cx="36" cy="12" r="1.5" />
+
+      <circle class="circuit-dot" cx="0" cy="24" r="1.5" />
+      <circle class="circuit-dot" cx="12" cy="24" r="1.5" />
+      <circle class="circuit-dot" cx="24" cy="24" r="1.5" />
+      <circle class="circuit-dot" cx="36" cy="24" r="1.5" />
+    </g>
+  </g>
+
+  <!-- BOTTOM RIGHT CIRCUIT ACCENTS -->
+  <g transform="translate(1400, 900) scale(-1, -1)">
+    <path class="circuit-line" d="M 0,260 A 260,260 0 0 1 260,0" />
+    <path class="circuit-line" d="M 0,210 A 210,210 0 0 1 210,0" />
+    <path class="circuit-line-thin" d="M 0,160 A 160,160 0 0 1 160,0" />
+    <circle class="circuit-node-hollow" cx="228" cy="74" r="4" />
+    <path class="circuit-line" d="M 228,74 L 140,74" />
+    <circle class="circuit-node" cx="140" cy="74" r="3" />
+
+    <!-- Bottom-right crosshair -->
+    <path class="circuit-plus" d="M 320,50 V 66 M 312,58 H 328" />
+  </g>
+</svg>
