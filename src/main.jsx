@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { createRoot } from "react-dom/client";
 import { motion, AnimatePresence } from "framer-motion";
 import "./styles.css";
+import profileImg from "../images/profile.png";
 
 /* ─── DATA ─── */
 const profile = {
@@ -270,7 +271,7 @@ function ProfileImage() {
       <div className="photo-frame">
         {!broken ? (
           <img
-            src="/images/profile.png"
+            src={profileImg}
             alt="Bommi Priyanka"
             onError={() => setBroken(true)}
           />
