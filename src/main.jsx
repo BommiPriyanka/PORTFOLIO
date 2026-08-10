@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { motion, AnimatePresence } from "framer-motion";
 import "./styles.css";
 import profileImg from "../images/profile.png";
+import logoImg from "../images/logo.png";
 
 /* ─── DATA ─── */
 const profile = {
@@ -122,6 +123,7 @@ function IntroScreen({ onEnter }) {
   return (
     <div id="intro" className={done ? "hide" : ""}>
       <div className="intro-grid" />
+      <img src={logoImg} alt="BP Logo" className="intro-logo-img" />
       <h1 className="intro-name display" id="introName">
         {"BOMMI PRIYANKA".split("").map((ch, i) => (
           <span key={i} style={{ animationDelay: `${i * 0.045}s` }}>
@@ -157,8 +159,9 @@ function TopNav({ active }) {
   return (
     <>
       <nav id="top-nav" className={scrolled ? "scrolled" : ""}>
-        <button className="top-nav-logo display" onClick={() => go("home")}>
-          BOMMI PRIYANKA
+        <button className="nav-logo-btn" onClick={() => go("home")}>
+          <img src={logoImg} alt="BP Logo" className="nav-logo-img" />
+          <span className="top-nav-logo display">BOMMI PRIYANKA</span>
         </button>
         <div className="top-nav-links">
           {navItems.map(({ id, label }) => (
@@ -1245,9 +1248,12 @@ function App() {
       </main>
 
       <footer>
-        <div className="footer-left">
-          <div className="footer-name display">BOMMI PRIYANKA</div>
-          <div className="footer-sub">AI/ML • Full Stack • Data</div>
+        <div className="footer-left" style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+          <img src={logoImg} alt="BP Logo" className="footer-logo-img" />
+          <div>
+            <div className="footer-name display">BOMMI PRIYANKA</div>
+            <div className="footer-sub">AI/ML • Full Stack • Data</div>
+          </div>
         </div>
 
         <div className="footer-socials">

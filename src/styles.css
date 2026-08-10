@@ -173,7 +173,27 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   transition: border-color .4s var(--ease), padding .4s var(--ease), background .4s var(--ease);
 }
 #top-nav.scrolled { border-bottom-color: var(--border); padding: 9px 8vw; background: rgba(248,248,245,0.95); }
+.nav-logo-btn {
+  display: flex; align-items: center; gap: 10px; background: none; border: none; cursor: pointer; padding: 0; text-decoration: none; color: var(--text);
+}
+.nav-logo-img {
+  width: 32px; height: 32px; object-fit: contain; border-radius: 50%; transition: transform 0.35s var(--ease);
+}
+.nav-logo-btn:hover .nav-logo-img {
+  transform: rotate(15deg) scale(1.1);
+}
 .top-nav-logo { font-family: 'Berghan', 'Syne', 'Bodoni Moda', 'Playfair Display', 'Space Grotesk', serif; font-weight: 700; font-size: 15px; letter-spacing: .02em; }
+.footer-logo-img {
+  width: 40px; height: 40px; object-fit: contain; border-radius: 50%; background: var(--bg-alt); padding: 2px; border: 1px solid var(--border);
+}
+.intro-logo-img {
+  width: 76px; height: 76px; object-fit: contain; border-radius: 50%; margin-bottom: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12); animation: logoPulse 3s ease-in-out infinite; z-index: 2;
+}
+@keyframes logoPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+}
 .top-nav-links { display: flex; gap: 36px; align-items: center; }
 .top-nav-link {
   font-size: 11px; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; color: var(--text-2);
