@@ -554,6 +554,7 @@ function SectionDivider() {
 /* ─── RESUME PREVIEW MODAL ─── */
 function ResumeModal({ open, onClose }) {
   if (!open) return null;
+
   return (
     <AnimatePresence>
       <div className="pdf-modal-overlay" onClick={onClose}>
@@ -567,22 +568,49 @@ function ResumeModal({ open, onClose }) {
         >
           <div className="pdf-modal-header">
             <div>
-              <div className="pdf-modal-title display">Bommi Priyanka — Curriculum Vitae</div>
+              <div className="pdf-modal-title display">BOMMI PRIYANKA — Resume</div>
               <div className="pdf-modal-sub">Official Resume Document</div>
             </div>
+
             <div className="pdf-modal-actions">
-              <a href="/resume.pdf" download="Bommi_Priyanka_CV.pdf" className="btn btn-solid btn-sm">
-                Download PDF ↓
+              <a
+                href="/resume.pdf"
+                download="Bommi_Priyanka_CV.pdf"
+                className="btn btn-solid btn-sm"
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                Download PDF
+              </a>
+              <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-outline btn-sm"
+              >
+                Open in New Tab ↗
               </a>
               <button className="pdf-modal-close" onClick={onClose} aria-label="Close modal">✕</button>
             </div>
           </div>
-          <iframe src="/resume.pdf" title="Bommi Priyanka CV" className="pdf-frame" />
+
+          <div className="pdf-modal-body" style={{ padding: 0 }}>
+            <iframe
+              src="/resume.pdf#toolbar=1&view=FitH"
+              title="Bommi Priyanka CV"
+              className="pdf-frame"
+            />
+          </div>
         </motion.div>
       </div>
     </AnimatePresence>
   );
 }
+
+
 
 /* ─── DEVELOPER TERMINAL BOX ─── */
 function DeveloperTerminalBox() {
